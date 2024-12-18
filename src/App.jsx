@@ -1,11 +1,13 @@
-import Welcome from './pages/Welcome/Welcome.jsx';
-
-
+import Success from "./components/Alert/Success";
+import Danger from "./components/Alert/Danger";
+import Warn from "./components/Alert/Warning";
 
 function App(){
   return(
     <div>
-      <Welcome username="Mubassam Ali" />
+      <Success text="Record Added Successfully" />
+      <Danger text="Record Deleted Successfully" />
+      <Warn text="Record Deleted Successfully" />
     </div>
   );
 }
