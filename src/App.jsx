@@ -1,11 +1,11 @@
 import logo from './logo.svg';
-import Welcome from './pages/Welcome/Welcome';
+import SlidingCards from './components/SlidingCard';
 
 function App(){
   return(
     <div>
-      <Welcome username="Mubassam Ali" />
+      <SlidingCards />
     </div>
-  );
+  )
 }
 export default App;
