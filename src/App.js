@@ -1,15 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
-
-
-function Welcome(props){
-  return(
-    <div>
-      <h1>welcome Back {props.username}</h1>
-    </div>
-  );
-}
-
+import Welcome from './pages/Welcome/Welcome';
 
 function App(){
   return(
