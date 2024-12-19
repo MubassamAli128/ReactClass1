@@ -12,13 +12,13 @@ const App = () => {
   return (
     <div>
       <div id="LandingPage" className="page block">
-        <LandingPage goToNextPage={() => showPage("Home")} />
+        <LandingPage NextPage={() => showPage("Home")} />
       </div>
       <div id="Home" className="page hidden">
-        <Home goToNextPage={() => showPage("Profile")} />
+        <Home NextPage={() => showPage("Profile")} />
       </div>
       <div id="Profile" className="page hidden">
-        <Profile goToNextPage={() => showPage("LandingPage")} />
+        <Profile NextPage={() => showPage("LandingPage")} />
       </div>
     </div>
   );
