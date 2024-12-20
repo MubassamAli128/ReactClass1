@@ -13,6 +13,7 @@ import { FaRegHeart, FaRegBookmark } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 import { IoPieChartSharp } from "react-icons/io5";
 import { IoMdTime } from "react-icons/io";
+
 const Home = ({ NextPage }) => {
     return (
         <>
@@ -154,10 +155,6 @@ const Home = ({ NextPage }) => {
                 <img className="w-8 h-8 hover:bg-blue-200 rounded-full p-1" src={image} alt="" />
             </div>
         </>
-        // <div className="text-center mt-12">
-        //     <h1 className="text-3xl font-bold">Home Page</h1>
-        //     <button onClick={NextPage} className="mt-4 py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Go to Profile</button>
-        // </div>
     );
 };
 
