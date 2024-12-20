@@ -8,6 +8,11 @@ import { GrLocation } from "react-icons/gr";
 import Button from "../../components/ImageBoxes/button";
 import ImageBox from "../../components/ImageBoxes/ImageBox";
 import { FcApproval } from "react-icons/fc";
+import { Rate } from 'antd';
+import { FaRegHeart, FaRegBookmark } from "react-icons/fa";
+import { MdDashboard } from "react-icons/md";
+import { IoPieChartSharp } from "react-icons/io5";
+import { IoMdTime } from "react-icons/io";
 const Home = ({ NextPage }) => {
     return (
         <>
@@ -59,10 +64,94 @@ const Home = ({ NextPage }) => {
                         <div className="px-3 rounded-md bg-gray-300">Branding</div>
                         <div className="px-3 rounded-md bg-gray-300">Adobe Photoshop</div>
                     </div>
+                    <div className="flex items-center justify-between w-full">
+                        <div className="flex items-center justify-center gap-2">
+                            <FcApproval/>Payment Verified
+                        </div>
+                        <Rate allowHalf defaultValue={2.5}/>
+                    </div>
+                    <hr className="border border-gray-300"/>
                     <div className="flex items-center justify-between">
-                        
+                        <div className="flex items-center gap-3">
+                            <FaRegHeart />
+                            <FaRegBookmark/>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <p className="text-gray-300">1 Hour Ago</p>
+                            <a href="#" className="text-blue-600">View Details</a>
+                        </div>
                     </div>
                 </div>
+                <div className="bg-white rounded-xl px-2 py-2 w-full flex flex-col gap-4">
+                    <div className="flex items-center gap-2">
+                        <ImageBox cls='w-[50px] h-[50px] bg-blue-400 rounded-lg'/>
+                        <div className="flex flex-col justify-center gap-1">
+                            <p className="font-bold text-md">Create Packaging Design for...</p>
+                            <p className="text-xs">Fireart Studio</p>
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <div className="px-3 rounded-md bg-gray-300">Figma</div>
+                        <div className="px-3 rounded-md bg-gray-300">Branding</div>
+                        <div className="px-3 rounded-md bg-gray-300">Adobe Photoshop</div>
+                    </div>
+                    <div className="flex items-center justify-between w-full">
+                        <div className="flex items-center justify-center gap-2">
+                            <FcApproval/>Payment Verified
+                        </div>
+                        <Rate allowHalf defaultValue={2.5}/>
+                    </div>
+                    <hr className="border border-gray-300"/>
+                    <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                            <FaRegHeart />
+                            <FaRegBookmark/>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <p className="text-gray-300">1 Hour Ago</p>
+                            <a href="#" className="text-blue-600">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg-white rounded-xl px-2 py-2 w-full flex flex-col gap-4">
+                    <div className="flex items-center gap-2">
+                        <ImageBox cls='w-[50px] h-[50px] bg-green-400 rounded-lg'/>
+                        <div className="flex flex-col justify-center gap-1">
+                            <p className="font-bold text-md">Create Packaging Design for...</p>
+                            <p className="text-xs">Fireart Studio</p>
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <div className="px-3 rounded-md bg-gray-300">Figma</div>
+                        <div className="px-3 rounded-md bg-gray-300">Branding</div>
+                        <div className="px-3 rounded-md bg-gray-300">Adobe Photoshop</div>
+                    </div>
+                    <div className="flex items-center justify-between w-full">
+                        <div className="flex items-center justify-center gap-2">
+                            <FcApproval/>Payment Verified
+                        </div>
+                        <Rate allowHalf defaultValue={2.5}/>
+                    </div>
+                    <hr className="border border-gray-300"/>
+                    <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                            <FaRegHeart />
+                            <FaRegBookmark/>
+                        </div>
+                        <div className="flex items-center gap-3">
+                            <p className="text-gray-300">1 Hour Ago</p>
+                            <a href="#" className="text-blue-600">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div className="fixed bottom-0 w-full bg-white p-2 flex items-center justify-between px-4">
+                <MdDashboard className="w-8 h-8 hover:bg-blue-200 hover:text-white rounded-full p-1"/>
+                <CiSearch className="w-8 h-8 hover:bg-blue-200 hover:text-white rounded-full p-1"/>
+                <IoPieChartSharp className="w-8 h-8 hover:bg-blue-200 hover:text-white rounded-full p-1"/>
+                <IoMdTime className="w-8 h-8 hover:bg-blue-200 hover:text-white rounded-full p-1"/>
+                <img className="w-8 h-8 hover:bg-blue-200 rounded-full p-1" src={image} alt="" />
             </div>
         </>
         // <div className="text-center mt-12">
@@ -74,7 +163,3 @@ const Home = ({ NextPage }) => {
 
 export default Home;
 
-
-// public/profil.jpg
-
-// ./
