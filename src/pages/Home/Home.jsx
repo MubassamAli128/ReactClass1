@@ -145,7 +145,6 @@ const Home = ({ NextPage }) => {
                         </div>
                     </div>
                 </div>
-
             </div>
             <div className="fixed bottom-0 w-full bg-white p-2 flex items-center justify-between px-4">
                 <MdDashboard className="w-8 h-8 hover:bg-blue-200 hover:text-white rounded-full p-1"/>
