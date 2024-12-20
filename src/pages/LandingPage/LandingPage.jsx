@@ -1,13 +1,17 @@
 import React from "react";
 import Rings from "./Rings";
+import Button from "../../components/ImageBoxes/button";
 
 const LandingPage = ({ NextPage }) => {
     return (
-        <div className="text-center mt-12">
-            <h1 className="text-3xl font-bold">Landing Page</h1>
+        <>
             <Rings/>
-            <button onClick={NextPage} className="mt-4 py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600">Go to Home</button>
-        </div>
+            <div className="flex flex-col items-center justify-center text-center w-full">
+                <h1 className="font-bold text-2xl p-8">Find a suitable job in seconds with our advanced search features🚀</h1>
+                <p className="px-4 pb-4 text-sm">Explore thousands of exciting jobs from leading companies around the world. Lowceris your trusted partner in fnding jobs</p>
+                <Button onClick={NextPage} text="Submit a Proposal" w="w-[90%]"/>
+            </div>
+        </>
     );
 };
 
