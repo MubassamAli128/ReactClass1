@@ -6,7 +6,7 @@ import Profile from "./pages/Profile/Profile";
 
 const App = () => {
 
-  let page = "LandingPage";
+  let page = "Home";
 
 
   return (

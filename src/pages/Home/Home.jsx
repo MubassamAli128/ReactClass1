@@ -1,20 +1,19 @@
 import React from "react";
-// import { DiAtom } from "react-icons/di";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import image from '../../assets/images/profile.jpg';
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { GrLocation } from "react-icons/gr";
 import Button from "../../components/ImageBoxes/button";
-import ImageBox from "../../components/ImageBoxes/ImageBox";
-import { FcApproval } from "react-icons/fc";
-import { Rate } from 'antd';
-import { FaRegHeart, FaRegBookmark } from "react-icons/fa";
+// import ImageBox from "../../components/ImageBoxes/ImageBox";
+// import { FcApproval } from "react-icons/fc";
+// import { Rate } from 'antd';
+// import { FaRegHeart, FaRegBookmark } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
-import { IoPieChartSharp, IoLogoEdge, IoLogoDropbox,IoLogoDribbble } from "react-icons/io5";
+import { IoPieChartSharp } from "react-icons/io5";
 import { IoMdTime } from "react-icons/io";
 import { BiLogoJquery } from "react-icons/bi";
-// import {  } from "react-icons/io5";
+import Cards from "./Cards";
 
 
 const Home = ({ NextPage }) => {
@@ -26,7 +25,9 @@ const Home = ({ NextPage }) => {
                     <p className="font-semibold">Lowcer</p>
                 </div>
                 <div className="flex items-center justify-center gap-1">
-                    <IoMdNotificationsOutline className="w-6 h-6"/>
+                    <IoMdNotificationsOutline className="w-6 h-6 relative">
+                        <div className="bg-red-500 rounded-full w-5 h-5 absolute p-2"></div>
+                    </IoMdNotificationsOutline>
                     <img className="w-10 h-10 rounded-full" src={image} alt="" />
                 </div>
             </div>
@@ -47,15 +48,17 @@ const Home = ({ NextPage }) => {
                 </div>
             </div>
             <div className="flex items-center justify-center px-2 mt-5">
-                <Button  text="Search"/>
+                <Button text="Search"/>
             </div>
             <div className="bg-gray-300 rounded-2xl w-full px-2 pt-2 flex flex-col items-center gap-2 mt-5">
+
                 <div className="flex items-center justify-center gap-2 bg-white rounded-full py-2 px-2 text-xs">
                     <div className="py-2 px-2 hover:bg-black hover:text-white rounded-full">Recent Jobs</div>
                     <div className="py-2 px-2 hover:bg-black hover:text-white rounded-full">Popular Jobs</div>
                     <div className="py-2 px-2 hover:bg-black hover:text-white rounded-full">Adobe photoshop</div>
                 </div>
-                <div className="bg-white rounded-xl px-2 py-2 w-full flex flex-col gap-4">
+                <Cards/>
+                {/* <div className="bg-white rounded-xl px-2 py-2 w-full flex flex-col gap-4"> 
                     <div className="flex items-center gap-2">
                         <ImageBox cls='w-[50px] h-[50px] bg-orange-400 rounded-lg'>
                             <IoLogoEdge className="w-10 h-10"/>
@@ -88,6 +91,8 @@ const Home = ({ NextPage }) => {
                         </div>
                     </div>
                 </div>
+
+
                 <div className="bg-white rounded-xl px-2 py-2 w-full flex flex-col gap-4">
                     <div className="flex items-center gap-2">
                         <ImageBox cls='w-[50px] h-[50px] bg-blue-400 rounded-lg'>
@@ -121,6 +126,7 @@ const Home = ({ NextPage }) => {
                         </div>
                     </div>
                 </div>
+
                 <div className="bg-white rounded-xl px-2 py-2 w-full flex flex-col gap-4">
                     <div className="flex items-center gap-2">
                         <ImageBox cls='w-[50px] h-[50px] bg-green-400 rounded-lg'>
@@ -153,7 +159,8 @@ const Home = ({ NextPage }) => {
                             <a href="#" className="text-blue-600">View Details</a>
                         </div>
                     </div>
-                </div>
+                </div> */}
+
             </div>
             <div className="fixed bottom-0 w-full bg-white p-2 flex items-center justify-between px-4">
                 <MdDashboard className="w-8 h-8 hover:bg-blue-200 hover:text-white rounded-full p-1"/>

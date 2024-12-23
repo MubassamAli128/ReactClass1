@@ -1,6 +1,6 @@
 import React from "react";
 import ImageBox from "../../components/ImageBoxes/ImageBox";
-import { DiAtom } from "react-icons/di";
+
 import Ring from "./Ring";
 import { IoLogoAppleAr } from "react-icons/io5";
 import { BiLogoFirebase, BiLogoFlutter, BiLogoGitlab, BiLogoMagento } from "react-icons/bi";

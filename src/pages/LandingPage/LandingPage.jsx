@@ -4,7 +4,7 @@ import Button from "../../components/ImageBoxes/button";
 
 const LandingPage = ({ NextPage }) => {
     return (
-        <>
+        <div className="flex flex-col items-center justify-between h-screen">
             <Rings/>
             <div className="flex flex-col items-center justify-center text-center w-full">
                 <h1 className="font-bold text-2xl p-8">Find a suitable job in seconds with our advanced search features🚀</h1>
@@ -13,7 +13,7 @@ const LandingPage = ({ NextPage }) => {
                     <Button text="Submit a Proposal"/>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
