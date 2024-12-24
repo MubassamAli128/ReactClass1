@@ -47,7 +47,7 @@ const Cards=()=>{
                             <p className="text-xs">{item.CardSubTitle}</p>
                         </div>
                     </div>
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2 flex-wrap">
                         {item.CardTags.map((tag,TagIndex)=>(
                             <div key={TagIndex} className="px-3 rounded-md bg-gray-300">{tag}</div>
                         ))}

@@ -5,10 +5,6 @@ import { CiSearch } from "react-icons/ci";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { GrLocation } from "react-icons/gr";
 import Button from "../../components/ImageBoxes/button";
-// import ImageBox from "../../components/ImageBoxes/ImageBox";
-// import { FcApproval } from "react-icons/fc";
-// import { Rate } from 'antd';
-// import { FaRegHeart, FaRegBookmark } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 import { IoPieChartSharp } from "react-icons/io5";
 import { IoMdTime } from "react-icons/io";
@@ -25,9 +21,11 @@ const Home = ({ NextPage }) => {
                     <p className="font-semibold">Lowcer</p>
                 </div>
                 <div className="flex items-center justify-center gap-1">
-                    <IoMdNotificationsOutline className="w-6 h-6 relative">
-                        <div className="bg-red-500 rounded-full w-5 h-5 absolute p-2"></div>
-                    </IoMdNotificationsOutline>
+                    <div className=" relative">
+                        <IoMdNotificationsOutline className="w-6 h-6">
+                        </IoMdNotificationsOutline>
+                        <div className="bg-red-500 rounded-full px-1 absolute top-0 right-0 text-[8px] text-white">2</div>
+                    </div>
                     <img className="w-10 h-10 rounded-full" src={image} alt="" />
                 </div>
             </div>
@@ -51,116 +49,12 @@ const Home = ({ NextPage }) => {
                 <Button text="Search"/>
             </div>
             <div className="bg-gray-300 rounded-2xl w-full px-2 pt-2 flex flex-col items-center gap-2 mt-5">
-
-                <div className="flex items-center justify-center gap-2 bg-white rounded-full py-2 px-2 text-xs">
-                    <div className="py-2 px-2 hover:bg-black hover:text-white rounded-full">Recent Jobs</div>
-                    <div className="py-2 px-2 hover:bg-black hover:text-white rounded-full">Popular Jobs</div>
-                    <div className="py-2 px-2 hover:bg-black hover:text-white rounded-full">Adobe photoshop</div>
+                <div className="flex items-center justify-center gap-2 bg-white rounded-full py-2 px-2 text-[13px]">
+                    <div className="py-3 px-2 hover:bg-black hover:text-white rounded-full">Recent Jobs</div>
+                    <div className="py-3 px-2 hover:bg-black hover:text-white rounded-full">Popular Jobs</div>
+                    <div className="py-3 px-2 hover:bg-black hover:text-white rounded-full">Adobe photoshop</div>
                 </div>
                 <Cards/>
-                {/* <div className="bg-white rounded-xl px-2 py-2 w-full flex flex-col gap-4"> 
-                    <div className="flex items-center gap-2">
-                        <ImageBox cls='w-[50px] h-[50px] bg-orange-400 rounded-lg'>
-                            <IoLogoEdge className="w-10 h-10"/>
-                        </ImageBox>
-                        <div className="flex flex-col justify-center gap-1">
-                            <p className="font-bold text-md">Create Packaging Design for...</p>
-                            <p className="text-xs">Fireart Studio</p>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <div className="px-3 rounded-md bg-gray-300">Figma</div>
-                        <div className="px-3 rounded-md bg-gray-300">Branding</div>
-                        <div className="px-3 rounded-md bg-gray-300">Adobe Photoshop</div>
-                    </div>
-                    <div className="flex items-center justify-between w-full">
-                        <div className="flex items-center justify-center gap-2">
-                            <FcApproval/>Payment Verified
-                        </div>
-                        <Rate allowHalf defaultValue={2.5}/>
-                    </div>
-                    <hr className="border border-gray-300"/>
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                            <FaRegHeart />
-                            <FaRegBookmark/>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <p className="text-gray-300">1 Hour Ago</p>
-                            <a href="#" className="text-blue-600">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div className="bg-white rounded-xl px-2 py-2 w-full flex flex-col gap-4">
-                    <div className="flex items-center gap-2">
-                        <ImageBox cls='w-[50px] h-[50px] bg-blue-400 rounded-lg'>
-                            <IoLogoDropbox className="w-10 h-10"/>
-                        </ImageBox>
-                        <div className="flex flex-col justify-center gap-1">
-                            <p className="font-bold text-md">Create Packaging Design for...</p>
-                            <p className="text-xs">Fireart Studio</p>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <div className="px-3 rounded-md bg-gray-300">Figma</div>
-                        <div className="px-3 rounded-md bg-gray-300">Branding</div>
-                        <div className="px-3 rounded-md bg-gray-300">Adobe Photoshop</div>
-                    </div>
-                    <div className="flex items-center justify-between w-full">
-                        <div className="flex items-center justify-center gap-2">
-                            <FcApproval/>Payment Verified
-                        </div>
-                        <Rate allowHalf defaultValue={2.5}/>
-                    </div>
-                    <hr className="border border-gray-300"/>
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                            <FaRegHeart />
-                            <FaRegBookmark/>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <p className="text-gray-300">1 Hour Ago</p>
-                            <a href="#" className="text-blue-600">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="bg-white rounded-xl px-2 py-2 w-full flex flex-col gap-4">
-                    <div className="flex items-center gap-2">
-                        <ImageBox cls='w-[50px] h-[50px] bg-green-400 rounded-lg'>
-                            <IoLogoDribbble className="w-10 h-10"/>
-                        </ImageBox>
-                        <div className="flex flex-col justify-center gap-1">
-                            <p className="font-bold text-md">Create Packaging Design for...</p>
-                            <p className="text-xs">Fireart Studio</p>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <div className="px-3 rounded-md bg-gray-300">Figma</div>
-                        <div className="px-3 rounded-md bg-gray-300">Branding</div>
-                        <div className="px-3 rounded-md bg-gray-300">Adobe Photoshop</div>
-                    </div>
-                    <div className="flex items-center justify-between w-full">
-                        <div className="flex items-center justify-center gap-2">
-                            <FcApproval/>Payment Verified
-                        </div>
-                        <Rate allowHalf defaultValue={2.5}/>
-                    </div>
-                    <hr className="border border-gray-300"/>
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                            <FaRegHeart />
-                            <FaRegBookmark/>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <p className="text-gray-300">1 Hour Ago</p>
-                            <a href="#" className="text-blue-600">View Details</a>
-                        </div>
-                    </div>
-                </div> */}
-
             </div>
             <div className="fixed bottom-0 w-full bg-white p-2 flex items-center justify-between px-4">
                 <MdDashboard className="w-8 h-8 hover:bg-blue-200 hover:text-white rounded-full p-1"/>
