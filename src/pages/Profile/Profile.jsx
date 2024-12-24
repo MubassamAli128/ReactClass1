@@ -3,9 +3,10 @@ import { IoChevronBackOutline, IoLogoDropbox } from "react-icons/io5";
 import { HiDotsVertical } from "react-icons/hi";
 import ViewImage from '../../assets/images/ViewImage.jpg';
 import ImageBox from "../../components/ImageBoxes/ImageBox";
-import image from '../../assets/images/profile.jpg';
-import image2 from '../../assets/images/profile2.jpeg';
-import image3 from '../../assets/images/profile3.jpeg';
+import AppliedPeople from "./AppliedPeople";
+// import image from '../../assets/images/profile.jpg';
+// import image2 from '../../assets/images/profile2.jpeg';
+// import image3 from '../../assets/images/profile3.jpeg';
 import { FaRegStar } from "react-icons/fa";
 import { FcApproval } from "react-icons/fc";
 import { GrLocation } from "react-icons/gr";
@@ -31,10 +32,11 @@ const Profile = ({ NextPage }) => {
             <div className="p-4 flex items-center justify-between w-full">
                 <div className="relative flex items-center justify-between w-[50%]">
                     <div>
-                        <img src={image} alt=""  className="absolute top-0 w-7 h-7 rounded-full border border-white"/>
+                        <AppliedPeople/>
+                        {/* <img src={image} alt=""  className="absolute top-0 left-0 w-7 h-7 rounded-full border border-white"/>
                         <img src={image2} alt=""  className="absolute top-0 left-3 w-7 h-7 rounded-full border border-white"/>
                         <img src={image3} alt=""  className="absolute top-0 left-6 w-7 h-7 rounded-full border border-white"/>
-                        <img src={image2} alt=""  className="absolute top-0 left-9 w-7 h-7 rounded-full border border-white"/>
+                        <img src={image2} alt=""  className="absolute top-0 left-9 w-7 h-7 rounded-full border border-white"/> */}
                     </div>
                     <span className="float right-0 text-right">36+ Applied</span>
                 </div>
